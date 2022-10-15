@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+	<link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+	<meta charset=UTF-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Currency Converter</title>
+	<link rel=stylesheet href=assets/css/main.css>
+	<link rel=stylesheet href=assets/css/_media.css>
+</head>
+<body>
+	<div class="container">
+		<form action="#">
+			<h1>Currency Converter</h1>
+			<div class="wrapper_rate">
+				<div class="rate-item">
+					<div class="rate_item_title">USD/UAH</div>
+					<div class="rate_item_value" data-value="USD">--.--</div>
+				</div>
+				<div class="rate-item">
+					<div class="rate_item_title">EUR/UAH</div>
+					<div class="rate_item_value" data-value="EUR">--.--</div>
+				</div>
+				<div class="rate-item">
+					<div class="rate_item_title">GBP/UAH</div>
+					<div class="rate_item_value" data-value="GBP">--.--</div>
+				</div>
+			</div>
+			<div class="container-converter">
+				<div class="descr">Convert from:</div>
+				<div class="empty"></div>
+				<div class="descr convert_to">Convert to:</div>
+				<select id="select_curr_from">
+					<option value="UAH">Ukrainian Hryvnia</option>
+					<option value="USD" selected>US Dollar</option>
+					<option value="EUR">Euro</option>
+					<option value="GBP">Pound Sterling</option>
+				</select>
+				<div class="switcher">
+					<img class="switcher_img" src="assets/icons/arrows.png" alt="arrows">
+				</div>
+				<select id="select_curr_to">
+					<option value="UAH">Ukrainian Hryvnia</option>
+					<option value="USD">US Dollar</option>
+					<option value="EUR" selected>Euro</option>
+					<option value="GBP">Pound Sterling</option>
+				</select>
+				<input type="text" id="input_from">
+				<input type="text" id="input_to">
+			</div>
+			<div class="container-filters">
+				<div class="descr">Date:</div>
+				<div class="descr exchange_type">Exchange rate type:</div>
+				<input type="date" id="date">
+				<select id="select_type">
+					<option value="NBU">NBU Exchange Rate</option>
+					<option value="PrvBnk">PrivatBank Exchange Rate</option>
+				</select>
+			</div>	
+			<div class="notes">*"PrivatBank Exchange Rate" shows data only as of today.<br>*"PrivatBank Exchange Rate" does not use GPB rate.</div>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

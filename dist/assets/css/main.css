@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet');
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.decrease-arrow::before {
+  content: url("../icons/rates/down.png");
+}
+
+.increase-arrow::before {
+  content: url("../icons/rates/up.png");
+}
+
+.decrease {
+  color: rgb(207, 48, 74);
+}
+
+.increase {
+  color: #03A66D;
+}
+
+.container {
+  width: 100%;
+  height: 545px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+form {
+  width: 700px;
+  /* background-color:  rgb(179 187 198 / 45%); */
+  border: 1px solid rgba(0, 111, 232, 0.3)/* #ced4da */;
+  border-radius: 8px;  
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 500;
+  color: rgb(0, 111, 232);
+  margin-bottom: 30px;
+}
+
+.wrapper_rate {
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.rate-item {
+  width: 150px;
+  height: 100px;
+  border: 1px solid rgba(0, 111, 232, 0.3);
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 400;
+  color:rgba(0, 111, 232);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-converter {
+  display: block;
+}
+
+.container-converter {
+  height: 163px;
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  column-gap: 30px;
+  grid-template-rows: 21px 1fr 1fr;
+  row-gap: 15px;
+}
+
+.switcher {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switcher img {
+  width: 30px;
+  height: 30px;
+}
+
+.container-filters {
+  margin-top: 15px;
+  height: 92px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 110px;
+  grid-template-rows: 21px 1fr;
+  row-gap: 15px;
+}
+
+.descr {
+  font-size: 24px;
+  font-weight: 300;
+  color:rgba(0, 111, 232)
+}
+
+select {
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid rgba(0, 111, 232, 0.3);
+  border-radius: 8px;
+  color:rgba(0, 111, 232);
+}
+
+input {
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid rgba(0, 111, 232, 0.3);
+  color:rgba(0, 111, 232);
+  border-radius: 8px;
+}
+
+#input_to {
+  background-color: rgba(0, 111, 232, 0.1);
+}
+
+.notes {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color:rgba(0, 111, 232)
+}
+
+
+
+
